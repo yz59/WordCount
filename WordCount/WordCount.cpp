@@ -26,9 +26,7 @@ order[2]为fp文件指针指向要操作的文件名*/
 	{
 		ch = fgetc(fp);
 		if (ch == EOF)
-		{
 			break;
-		}
 		if (ch == ' ' || ch == ',') { cnt_word++;cnt_char++; }
 		if (ch == '\t' || ch == '\n' || ch >= '!'&&ch <= '/' || ch >= ':'&&ch <= '@' || ch >= '['&&ch <= '`' || ch >= '{'&&ch <= '~') { cnt_char++; }
 	}
